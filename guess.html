@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            font-size: 16px;
+            padding: 5px;
+        }
+        button {
+            font-size: 16px;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+        p#message {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guessing Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="userGuess" min="1" max="100">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="message"></p>
+    <script src="guessgame2.js"></script>
+</body>
+</html>
